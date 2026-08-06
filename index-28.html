@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Résultats SIL1 — Les Cours Sonou</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#10162A;
+    --ink-2:#161D36;
+    --parchment:#F3ECDA;
+    --gold:#C9A130;
+    --crimson:#7C2D2D;
+    --slate:#8B93A7;
+    --line: rgba(243,236,218,0.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background: var(--ink);
+    color: var(--parchment);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  header{
+    padding: 4.5rem 1.5rem 3rem;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .eyebrow{
+    font-size:0.72rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:clamp(2rem, 5vw, 3.2rem);
+    margin-top:0.6rem;
+    letter-spacing:-0.01em;
+  }
+  header p{
+    margin-top:0.9rem;
+    color:var(--slate);
+    font-size:1rem;
+    max-width:34rem;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.5;
+  }
+
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding: 3rem 1.5rem 5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
+  }
+
+  .slip{
+    background: var(--parchment);
+    color: var(--ink);
+    border-radius:10px;
+    padding:1.4rem 1.6rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.2rem;
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0 10px 30px -18px rgba(0,0,0,0.6);
+    background-image:
+      radial-gradient(circle at 0 50%, var(--ink) 6px, transparent 7px),
+      radial-gradient(circle at 100% 50%, var(--ink) 6px, transparent 7px);
+    background-repeat:no-repeat;
+    background-position: left center, right center;
+  }
+  .slip::after{
+    content:"";
+    position:absolute;
+    top:0; bottom:0; right:76px;
+    border-left:2px dashed rgba(16,22,42,0.18);
+  }
+  .slip-info{display:flex; flex-direction:column; gap:0.4rem; min-width:0;}
+  .tag{
+    display:inline-flex;
+    align-self:flex-start;
+    font-size:0.68rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#fff;
+    background:var(--crimson);
+    padding:0.22rem 0.55rem;
+    border-radius:4px;
+  }
+  .slip-title{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.12rem;
+    line-height:1.3;
+    word-break:break-word;
+  }
+  .slip-meta{
+    font-size:0.8rem;
+    color:#5B6478;
+  }
+
+  .dl{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    background:var(--ink);
+    color:var(--parchment);
+    font-weight:600;
+    font-size:0.9rem;
+    padding:0.7rem 1.1rem;
+    border-radius:7px;
+    transition: transform 0.15s ease, background 0.15s ease;
+    white-space:nowrap;
+  }
+  .dl:hover{ background:var(--crimson); transform:translateY(-1px); }
+  .dl svg{width:16px;height:16px;flex-shrink:0;}
+
+  footer{
+    text-align:center;
+    padding:2.5rem 1.5rem 3.5rem;
+    color:var(--slate);
+    font-size:0.82rem;
+    border-top:1px solid var(--line);
+  }
+  footer strong{color:var(--gold);}
+
+  @media (max-width:560px){
+    .slip{ flex-direction:column; align-items:stretch; text-align:left; padding:1.3rem;}
+    .slip::after{display:none;}
+    .dl{justify-content:center;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .dl{ transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Institut Universitaire · Les Cours Sonou</div>
+  <h1>Résultats — Licence 1 SIL1</h1>
+  <p>Retrouvez ci-dessous les relevés de notes officiels de la filière SIL1. Touchez un document pour le télécharger directement sur votre appareil.</p>
+</header>
+
+<main>
+
+  <div class="slip">
+    <div class="slip-info">
+      <span class="tag">1er semestre · Normale</span>
+      <span class="slip-title">Résultats Normale — 1er semestre</span>
+      <span class="slip-meta">PDF · 544 Ko</span>
+    </div>
+    <a class="dl" href="pdfs/NORMALE_-_SIL1_-_1ER_SEMESTRE.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger
+    </a>
+  </div>
+
+  <div class="slip">
+    <div class="slip-info">
+      <span class="tag">2e semestre · Session 1</span>
+      <span class="slip-title">Résultats 2e semestre — Session 1</span>
+      <span class="slip-meta">PDF · 466 Ko</span>
+    </div>
+    <a class="dl" href="pdfs/SIL1_-_2ME_SEMESTRE-1.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger
+    </a>
+  </div>
+
+  <div class="slip">
+    <div class="slip-info">
+      <span class="tag">2e semestre</span>
+      <span class="slip-title">Résultats 2e semestre</span>
+      <span class="slip-meta">PDF · 545 Ko</span>
+    </div>
+    <a class="dl" href="pdfs/SIL1_-_2ME_SEMESTRE.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger
+    </a>
+  </div>
+
+  <div class="slip">
+    <div class="slip-info">
+      <span class="tag">Général</span>
+      <span class="slip-title">Résultats SIL1</span>
+      <span class="slip-meta">PDF · 1,70 Mo</span>
+    </div>
+    <a class="dl" href="pdfs/SIL1-1.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  Site créé par <strong>SYNUS Tech</strong> — hébergement statique GitHub + Vercel
+</footer>
+
+</body>
+</html>
